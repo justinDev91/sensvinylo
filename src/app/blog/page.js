@@ -29,7 +29,6 @@ const Blog = () => {
           <PromotionList />
         </section>
         <section>
-          <h1 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h1>
           <NewsletterForm />
         </section>
       </main>

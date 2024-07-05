@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import NewsletterForm from './components/NewsletterForm';
 
 const Footer = () => {
   return (
@@ -18,6 +19,9 @@ const Footer = () => {
             <p className="text-gray-400 mt-4">
               Bienvenue sur notre magasin de vinyles ! Découvrez une large gamme de vinyles, des classiques aux dernières sorties.
             </p>
+            <section className="my-4">
+              <NewsletterForm />
+          </section>
           </div>
 
           <div className="col-span-1 md:col-span-1">
