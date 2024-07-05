@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Head from 'next/head';
-import Navbar from '../navbar';
+import Navbar from '../components/navbar';
 import vinylData from '../data/vinylData';
+import Footer from '../components/footer';
 
 const Genre = () => {
   const genres = [
@@ -82,6 +83,7 @@ const Genre = () => {
             </div>
           ))}
         </main>
+        <Footer />
       </div>
     </>
   );

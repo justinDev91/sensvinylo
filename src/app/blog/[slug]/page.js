@@ -1,7 +1,8 @@
 "use client"
 
+import Navbar from '@/app/components/navbar';
 import blogPosts from '@/app/data/blogPosts';
-import Navbar from '@/app/navbar';
+
 import Image from 'next/image';
 
 const BlogPost = ({

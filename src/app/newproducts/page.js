@@ -1,9 +1,10 @@
 'use client';
 import Image from 'next/image';
 import Head from 'next/head';
-import Navbar from '../navbar';
+import Navbar from '../components/navbar';
 import Link from 'next/link';
 import vinylData from '../data/vinylData';
+import Footer from '../components/footer';
 
 const NewProducts = () => {
   const products = vinylData.promotions;
@@ -101,6 +102,7 @@ const NewProducts = () => {
             ))}
           </div>
         </main>
+        <Footer />
       </div>
     </>
   );

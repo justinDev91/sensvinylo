@@ -1,17 +1,13 @@
 
-import Navbar from './navbar.js';
-import SearchBar from './SearchBar.js';
-import ProductOverview from "./productOverview.js";
-import ProductCarousel from "./productCarousel.js";
-import ShoppingCart from './shoppingCarts.js';
+
 import ProductList from './components/ProductList.js';
-import Footer from './footer.js';
-import NetworkLinks from './NetworkLinks.js';
-import NewsletterForm from './components/NewsletterForm.js';
+import NetworkLinks from './components/NetworkLinks.js';
+import Footer from './components/footer.js';
+import SearchBar from './components/searchBar.js';
+import Navbar from './components/navbar.js';
+
 
 export default function Home() {
-  // Create an array of 10 items
-  const carts = Array.from({ length: 10 });
 
   return (
     <> 

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import NewsletterForm from './components/NewsletterForm';
+import NewsletterForm from './NewsletterForm';
 
 const Footer = () => {
   return (

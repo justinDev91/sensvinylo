@@ -1,7 +1,9 @@
 "use client"
 
+import Footer from '@/app/components/footer';
+import Navbar from '@/app/components/navbar';
 import vinylData from '@/app/data/vinylData';
-import Navbar from '@/app/navbar';
+
 import Image from 'next/image';
 
 const ProductOverview = ({params}) => {
@@ -23,7 +25,7 @@ const ProductOverview = ({params}) => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-5xl mt-8 mx-auto p-4 bg-white shadow-md rounded-lg">
+      <div className="max-w-5xl m-8 mx-auto p-4 bg-white shadow-md rounded-lg">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/2">
             <Image
@@ -85,6 +87,7 @@ const ProductOverview = ({params}) => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

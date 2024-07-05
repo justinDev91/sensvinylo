@@ -1,10 +1,12 @@
 import Head from 'next/head';
-import Navbar from '../navbar';
+
 import ProductList from '../components/ProductList';
 import NewsletterForm from '../components/NewsletterForm';
 
 import BlogPostList from '../components/BlogPostList';
 import PromotionList from '../components/PromotionList';
+import Footer from '../components/footer';
+import Navbar from '../components/navbar';
 
 const Blog = () => {
   return (
@@ -28,10 +30,8 @@ const Blog = () => {
           <h1 className="text-3xl font-bold mb-4">Promotions</h1>
           <PromotionList />
         </section>
-        <section>
-          <NewsletterForm />
-        </section>
       </main>
+      <Footer />
     </div>
   );
 };
