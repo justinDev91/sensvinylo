@@ -1,52 +1,12 @@
 'use client';
 import Image from 'next/image';
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
 import Navbar from '../navbar';
+import Link from 'next/link';
+import vinylData from '../data/vinylData';
 
 const NewProducts = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    setProducts([
-      {
-        id: 1,
-        name: "Vinyle Classic Rock",
-        image: "/vinyle-classic-rock.png",
-        price: 29.99,
-        originalPrice: 49.99,
-        rating: 4.5,
-        reviewCount: 150,
-        description: "Enjoy the timeless tunes of classic rock with this vinyl record collection. Each record is a masterpiece of rock music history.",
-        features: ["High-quality sound", "Durable vinyl material", "Limited edition"],
-        benefits: "Perfect for collectors and enthusiasts alike, these vinyl records capture the essence of classic rock music.",
-      },
-      {
-        id: 2,
-        name: "Vinyle Jazz Collection",
-        image: "/vinyl-jazz-collection.png",
-        price: 19.99,
-        originalPrice: 39.99,
-        rating: 4.7,
-        reviewCount: 80,
-        description: "Immerse yourself in the smooth sounds of jazz with this exquisite vinyl record collection. Perfect for relaxing evenings and jazz enthusiasts.",
-        features: ["Authentic jazz recordings", "High-fidelity sound", "Premium vinyl material"],
-        benefits: "Enhance your music collection with these jazz vinyl records, meticulously crafted for an exceptional listening experience.",
-      },
-      {
-        id:3,
-        name: "Record-vector Collection",
-        image: "/vinyl-record-vector.webp",
-        price: 19.99,
-        originalPrice: 39.99,
-        rating: 4.7,
-        reviewCount: 80,
-        description: "Immerse yourself in the smooth sounds of jazz with this exquisite vinyl record collection. Perfect for relaxing evenings and jazz enthusiasts.",
-        features: ["Authentic jazz recordings", "High-fidelity sound", "Premium vinyl material"],
-        benefits: "Enhance your music collection with these jazz vinyl records, meticulously crafted for an exceptional listening experience.",
-      }
-    ]);
-  }, []);
+  const products = vinylData.promotions;
 
   return (
     <>
@@ -95,14 +55,16 @@ const NewProducts = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map(product => (
               <div key={product.id} className="border rounded-lg p-4">
-                <Image
-                  src={product.image}
-                  width={500}
-                  height={500}
-                  alt={product.name}
-                  className="rounded-lg"
-                  priority
-                />
+                <Link href={`/product/${product.slug}`}>
+                  <Image
+                    src={product.image}
+                    width={500}
+                    height={500}
+                    alt={product.name}
+                    className="rounded-lg"
+                    priority
+                  />
+                  </Link>
                 <h2 className="text-xl font-bold mt-4 mb-2">{product.name}</h2>
                 <div className="flex items-center mb-4">
                   <div className="text-yellow-500">

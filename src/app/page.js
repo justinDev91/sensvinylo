@@ -23,17 +23,8 @@ export default function Home() {
           <h1 className="text-3xl m-10 font-bold mb-4">Products</h1>
           <ProductList />
         </section>
-        <div className="mt-8">
-          <ProductOverview />
-        </div>
-        <div className="mt-8 bg-gray-100 py-8">
-          <ProductCarousel />
-      </div>
-      {/* <div className="mt-8 bg-gray-100 py-8">
-        <ShoppingCart />
-      </div> */}
       <section className="bg-gray-50 flex justify-center items-center h-full">
-        <div className="max-w-7xl pb-4 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-7xl p-4 mx-auto sm:px-6 lg:px-8">
           <NetworkLinks />
         </div>
       </section>

@@ -1,40 +1,12 @@
 'use client';
 import Image from 'next/image';
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
 import Navbar from '../navbar';
+import Link from 'next/link';
+import vinylData from '../data/vinylData';
 
 const Promotions = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    setProducts([
-      {
-        id: 1,
-        name: "Vinyle Classic Rock",
-        image: "/vinyle-classic-rock.png",
-        price: 29.99,
-        originalPrice: 49.99,
-        rating: 4.5,
-        reviewCount: 150,
-        description: "Explore the nostalgic sounds of classic rock with this vinyl record collection. Featuring iconic bands and memorable tracks, it's a must-have for music enthusiasts.",
-        features: ["High-quality sound", "Limited edition", "Authentic recordings"],
-        benefits: "Perfect for collectors and those who appreciate the rich history of classic rock music.",
-      },
-      {
-        id: 2,
-        name: "Vinyle Jazz Collection",
-        image: "/vinyl-jazz-collection.png",
-        price: 19.99,
-        originalPrice: 39.99,
-        rating: 4.7,
-        reviewCount: 80,
-        description: "Indulge in the smooth melodies of jazz with this exquisite vinyl collection. Handpicked tracks from jazz legends ensure a relaxing and sophisticated listening experience.",
-        features: ["Premium vinyl material", "Exceptional sound clarity", "Unique jazz compositions"],
-        benefits: "Enhance your vinyl collection with timeless jazz classics that captivate and soothe the senses.",
-      }
-    ]);
-  }, []);
+  const products = vinylData.promotions;
 
   return (
     <>
@@ -78,20 +50,22 @@ const Promotions = () => {
       </Head>
       <div>
         <Navbar />
-        <main className="max-w-5xl mx-auto p-4 bg-white shadow-md rounded-lg">
+        <main className="max-w-5xl m-8 mx-auto p-4 bg-white shadow-md rounded-lg">
           <h1 className="text-4xl text-black font-bold mb-8">Promotions</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map(product => (
               <div key={product.id} className="border rounded-lg p-4">
-                <Image
-                  src={product.image}
-                  width={500}
-                  height={500}
-                  alt={product.name}
-                  className="rounded-lg"
-                  priority
-                />
-                <h2 className="text-xl font-bold mt-4 mb-2">{product.name}</h2>
+                 <Link href={`/product/${product.slug}`}>
+                    <Image
+                      src={product.image}
+                      width={500}
+                      height={500}
+                      alt={product.name}
+                      className="rounded-lg"
+                      priority
+                    />
+                  </Link>
+                <h2 className="text-xl text-gray-600 font-bold mt-4 mb-2">{product.name}</h2>
                 <div className="flex items-center mb-4">
                   <div className="text-yellow-500">
                     {Array.from({ length: Math.floor(product.rating) }, (_, index) => (

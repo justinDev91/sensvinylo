@@ -9,7 +9,7 @@ const ProductList = () => {
     <div className="m-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       {products.map(product => (
         <div key={product.id} className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <Link href="#">
+          <Link href={`/product/${product.slug}`}>
             <div className="relative aspect-w-1 aspect-h-1">
               <Image
                 src={product.image}
@@ -21,7 +21,7 @@ const ProductList = () => {
             </div>
           </Link>
           <div className="px-5 pb-5">
-            <Link href="#">
+            <Link href={`/product/${product.slug}`}>
               <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{product.name}</h5>
             </Link>
             <div className="flex items-center mt-2.5 mb-5">
