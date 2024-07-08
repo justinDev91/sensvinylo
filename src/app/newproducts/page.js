@@ -22,9 +22,9 @@ const NewProducts = () => {
             "@type": "ItemList",
             "itemListElement": products.map((product, index) => ({
               "@type": "Product",
-              "@id": `https://www.votre-site.com/product/${product.id}`,
+              "@id": `https://www.sensvinylo-musique.fr/product/${product.id}`,
               "name": product.name,
-              "image": `https://www.votre-site.com${product.image}`,
+              "image": `https://www.sensvinylo-musique.fr/${product.image}`,
               "description": product.description,
               "sku": `${product.id}`,
               "brand": {
@@ -33,12 +33,10 @@ const NewProducts = () => {
               },
               "offers": {
                 "@type": "Offer",
-                "url": `https://www.votre-site.com/product/${product.id}`,
+                "url": `https://www.sensvinylo-musique.fr/product/${product.id}`,
                 "priceCurrency": "USD",
                 "price": product.price,
                 "priceValidUntil": "2024-12-31",
-                "itemCondition": "https://schema.org/NewCondition",
-                "availability": "https://schema.org/InStock"
               },
               "aggregateRating": {
                 "@type": "AggregateRating",

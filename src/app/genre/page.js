@@ -27,21 +27,20 @@ const Genre = () => {
               "item": {
                 "@type": "Collection",
                 "name": genre.name,
-                "url": `https://www.votre-site.com/genres/${genre.name.toLowerCase().replace(' ', '-')}`,
+                "url": `https://www.sensvinylo-musique.fr/genre`,
                 "itemListElement": genre.vinyls.map((vinyl, idx) => ({
                   "@type": "Product",
-                  "@id": `https://www.votre-site.com/product/${vinyl.id}`,
+                  "@id": `https://www.sensvinylo-musique.fr/product/`,
                   "name": vinyl.name,
-                  "image": `https://www.votre-site.com${vinyl.image}`,
+                  "image": `https://www.sensvinylo-musique.fr/`,
                   "description": vinyl.description,
                   "sku": `${vinyl.id}`,
                   "offers": {
                     "@type": "Offer",
-                    "url": `https://www.votre-site.com/product/${vinyl.id}`,
-                    "priceCurrency": "USD",
+                    "url": `https://www.sensvinylo-musique.fr/product/`,
+                    "priceCurrency": "EUR",
                     "price": vinyl.price,
-                    "itemCondition": "https://schema.org/NewCondition",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://www.sensvinylo-musique.fr/newproducts/"
                   }
                 }))
               }
