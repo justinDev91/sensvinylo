@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import NewsletterForm from './NewsletterForm';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <a href="/" className="flex items-center space-x-2">
+            <Link href="/">
               <Image
                 src="/vinyle-img.png"
                 alt="Logo du magasin de vinyles"
@@ -15,93 +16,52 @@ const Footer = () => {
                 height={30}
                 className="footer-v1-logo"
               />
-            </a>
+            </Link>
             <p className="text-gray-400 mt-4">
-              Bienvenue sur notre magasin de vinyles ! Découvrez une large gamme de vinyles, des classiques aux dernières sorties.
+              Bienvenue sur notre magasin de vinyles ! D&eacute;couvrez une large gamme de vinyles, des classiques aux derni&egrave;res sorties.
             </p>
             <section className="my-4">
               <NewsletterForm />
-          </section>
+            </section>
           </div>
 
           <div className="col-span-1 md:col-span-1">
             <div className="text-xl font-semibold mb-4 text-white">Menu</div>
             <ul className="space-y-2">
               <li>
-                <a href="/categories/classiques" className="flex items-center space-x-2 text-gray-400 hover:text-white">
+                <Link href="/newproducts" className="flex items-center space-x-2 text-gray-400 hover:text-white">
                   <span>Classiques</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/categories/nouvelles-sorties" className="flex items-center space-x-2 text-gray-400 hover:text-white">
+                <Link href="/newproducts" className="flex items-center space-x-2 text-gray-400 hover:text-white">
                   <span>Nouvelles Sorties</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog/conseils" className="flex items-center space-x-2 text-gray-400 hover:text-white">
-                  <span>Conseils d'entretien des vinyles</span>
-                </a>
+                <Link href="/blog" className="flex items-center space-x-2 text-gray-400 hover:text-white">
+                  <span>Conseils d&apos;entretien des vinyles</span>
+                </Link>
               </li>
               <li>
-                <a href="/a-propos" className="flex items-center space-x-2 text-gray-400 hover:text-white">
-                  <span>À propos de nous</span>
-                </a>
+                <Link href="/promotion" className="flex items-center space-x-2 text-gray-400 hover:text-white">
+                  <span>Promotions</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="flex items-center space-x-2 text-gray-400 hover:text-white">
+                  <span>&Agrave; propos de nous</span>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="col-span-1 md:col-span-1">
-            <div className="text-xl font-semibold mb-4 text-white">Sélection du moment</div>
+            <div className="text-xl font-semibold mb-4 text-white">S&eacute;lection du moment</div>
             <ul className="space-y-4">
               <li>
                 <div className="flex space-x-4">
-                  <a href="/vinyles/beatles">
-                    <div className="h-20 w-20 relative">
-                      <Image
-                          src="/vinyl-red.png"
-                          alt="Vinyle de Queen"
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-md"
-                        />
-                    </div>
-                  </a>
-                  <div className="flex-1">
-                    <a href="/vinyles/beatles" className="text-lg font-semibold text-white hover:text-blue-500">
-                      The Beatles - Abbey Road
-                    </a>
-                    <div className="flex items-center space-x-2 mt-1 text-gray-400">
-                      <span>Il y a 4 minutes</span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex space-x-4">
-                  <a href="/vinyles/pink-floyd">
-                    <div className="h-20 w-20 relative">
-                      <Image
-                        src="/vinyl-yellow.jpg"
-                        alt="Vinyle de Queen"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-md"
-                      />
-                    </div>
-                  </a>
-                  <div className="flex-1">
-                    <a href="/vinyles/pink-floyd" className="text-lg font-semibold text-white hover:text-blue-500">
-                      Pink Floyd - The Dark Side of the Moon
-                    </a>
-                    <div className="flex items-center space-x-2 mt-1 text-gray-400">
-                      <span>Il y a 6 minutes</span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex space-x-4">
-                  <a href="/vinyles/queen">
+                  <Link href="/newproducts">
                     <div className="h-20 w-20 relative">
                       <Image
                         src="/vinyl-red.png"
@@ -111,11 +71,57 @@ const Footer = () => {
                         className="rounded-md"
                       />
                     </div>
-                  </a>
+                  </Link>
                   <div className="flex-1">
-                    <a href="/vinyles/queen" className="text-lg font-semibold text-white hover:text-blue-500">
+                    <Link href="/newproducts" className="text-lg font-semibold text-white hover:text-blue-500">
+                      The Beatles - Abbey Road
+                    </Link>
+                    <div className="flex items-center space-x-2 mt-1 text-gray-400">
+                      <span>Il y a 4 minutes</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="flex space-x-4">
+                  <Link href="/newproducts">
+                    <div className="h-20 w-20 relative">
+                      <Image
+                        src="/vinyl-yellow.jpg"
+                        alt="Vinyle de Queen"
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-md"
+                      />
+                    </div>
+                  </Link>
+                  <div className="flex-1">
+                    <Link href="/newproducts" className="text-lg font-semibold text-white hover:text-blue-500">
+                      Pink Floyd - The Dark Side of the Moon
+                    </Link>
+                    <div className="flex items-center space-x-2 mt-1 text-gray-400">
+                      <span>Il y a 6 minutes</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="flex space-x-4">
+                  <Link href="/newproducts">
+                    <div className="h-20 w-20 relative">
+                      <Image
+                        src="/vinyl-red.png"
+                        alt="Vinyle de Queen"
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-md"
+                      />
+                    </div>
+                  </Link>
+                  <div className="flex-1">
+                    <Link href="/newproducts" className="text-lg font-semibold text-white hover:text-blue-500">
                       Queen - Greatest Hits
-                    </a>
+                    </Link>
                     <div className="flex items-center space-x-2 mt-1 text-gray-400">
                       <span>Il y a 8 minutes</span>
                     </div>
@@ -130,7 +136,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <div className="flex space-x-4">
-                  <a href="/apps/lecteur-vinyle">
+                  <Link href="/newproducts">
                     <div className="h-20 w-20 relative">
                       <Image
                         src="/vinyle-classic-rock.png"
@@ -140,20 +146,20 @@ const Footer = () => {
                         className="rounded-md"
                       />
                     </div>
-                  </a>
+                  </Link>
                   <div className="flex-1">
-                    <a href="/apps/lecteur-vinyle" className="text-lg font-semibold text-white hover:text-blue-500">
+                    <Link href="/newproducts" className="text-lg font-semibold text-white hover:text-blue-500">
                       Application Lecteur de Vinyle
-                    </a>
+                    </Link>
                     <div className="flex items-center space-x-2 mt-1">
-                      <div className="text-gray-400">Écoutez vos vinyles préférés avec notre application.</div>
+                      <div className="text-gray-400">&Eacute;coutez vos vinyles pr&eacute;f&eacute;r&eacute;s avec notre application.</div>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="flex space-x-4">
-                  <a href="/apps/quiz-vinyle">
+                  <Link href="/blog">
                     <div className="h-20 w-20 relative">
                       <Image
                         src="/vinyl-record-vector.webp"
@@ -163,11 +169,11 @@ const Footer = () => {
                         className="rounded-md"
                       />
                     </div>
-                  </a>
+                  </Link>
                   <div className="flex-1">
-                    <a href="/apps/quiz-vinyle" className="text-lg font-semibold text-white hover:text-blue-500">
+                    <Link href="/blog" className="text-lg font-semibold text-white hover:text-blue-500">
                       Application Quiz Vinyle
-                    </a>
+                    </Link>
                     <div className="flex items-center space-x-2 mt-1">
                       <div className="text-gray-400">Testez vos connaissances des vinyles avec notre application de quiz.</div>
                     </div>
@@ -176,7 +182,7 @@ const Footer = () => {
               </li>
               <li>
                 <div className="flex space-x-4">
-                  <a href="/apps/magasin-vinyle">
+                  <Link href="/blog">
                     <div className="h-20 w-20 relative">
                       <Image
                         src="/vinyl-jazz-collection.png"
@@ -186,13 +192,13 @@ const Footer = () => {
                         className="rounded-md"
                       />
                     </div>
-                  </a>
+                  </Link>
                   <div className="flex-1">
-                    <a href="/apps/magasin-vinyle" className="text-lg font-semibold text-white hover:text-blue-500">
+                    <Link href="/newproducts" className="text-lg font-semibold text-white hover:text-blue-500">
                       Application Magasin de Vinyle
-                    </a>
+                    </Link>
                     <div className="flex items-center space-x-2 mt-1">
-                      <div className="text-gray-400">Parcourez et achetez des vinyles en toute simplicité.</div>
+                      <div className="text-gray-400">Parcourez et achetez des vinyles en toute simplicit&eacute;.</div>
                     </div>
                   </div>
                 </div>
