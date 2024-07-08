@@ -1,9 +1,10 @@
 'use client';
-import Image from 'next/image';
 import Head from 'next/head';
-import Navbar from '../components/navbar';
+import Image from 'next/image';
 import Link from 'next/link';
-import vinylData from '../data/vinylData';import Footer from '../components/footer';
+import Footer from '../components/footer';
+import Navbar from '../components/navbar';
+import vinylData from '../data/vinylData';
 ;
 
 const Promotions = () => {
@@ -13,9 +14,11 @@ const Promotions = () => {
     <>
       <Head>
         <title>Promotions - Magasin de Vinyles</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Découvrez nos offres promotionnelles sur une sélection de disques vinyles. Profitez des réductions pour enrichir votre collection de musique." />
         <meta name="keywords" content="promotions vinyles, offres spéciales, vinyles pas chers, réductions vinyles" />
-        <meta name="author" content="Magasin de Vinyles" />
+        <meta name="author" content="SensVinylo" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",

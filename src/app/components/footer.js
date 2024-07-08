@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import NewsletterForm from './NewsletterForm';
 import Link from 'next/link';
+import NewsletterForm from './NewsletterForm';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src="/vinyle-img.png"
-                alt="Logo du magasin de vinyles"
+                alt="Logo de sensvinylo, magasin de vinyle"
                 width={100}
                 height={30}
                 className="footer-v1-logo"

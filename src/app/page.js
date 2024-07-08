@@ -1,10 +1,10 @@
 
 
-import ProductList from './components/ProductList.js';
 import NetworkLinks from './components/NetworkLinks.js';
+import ProductList from './components/ProductList.js';
 import Footer from './components/footer.js';
-import SearchBar from './components/searchBar.js';
 import Navbar from './components/navbar.js';
+import SearchBar from './components/searchBar.js';
 
 
 export default function Home() {

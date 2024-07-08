@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import Head from 'next/head';
+import Image from 'next/image';
+import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import vinylData from '../data/vinylData';
-import Footer from '../components/footer';
 
 const Genre = () => {
   const genres = [
@@ -13,10 +13,12 @@ const Genre = () => {
   return (
     <>
       <Head>
-        <title>Vinyls par Genre - Magasin de Vinyles</title>
+        <meta charset="UTF-8"/>
+        <title>Vinyls par Genre - SensVinylo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Découvrez une sélection de disques vinyles classés par genre musical. Explorez nos collections de rock, jazz, et plus encore." />
         <meta name="keywords" content="vinyles par genre, vinyles rock, vinyles jazz, collections vinyles, magasin de vinyles" />
-        <meta name="author" content="Magasin de Vinyles" />
+        <meta name="author" content="SensVinylo" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",

@@ -1,10 +1,10 @@
 'use client';
-import Image from 'next/image';
 import Head from 'next/head';
-import Navbar from '../components/navbar';
+import Image from 'next/image';
 import Link from 'next/link';
-import vinylData from '../data/vinylData';
 import Footer from '../components/footer';
+import Navbar from '../components/navbar';
+import vinylData from '../data/vinylData';
 
 const NewProducts = () => {
   const products = vinylData.promotions;
@@ -12,10 +12,12 @@ const NewProducts = () => {
   return (
     <>
       <Head>
-        <title>Nouveautés - Magasin de Vinyles</title>
+        <title>Nouveautés - SensVinylo</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Découvrez nos nouvelles arrivées de vinyles. Profitez de nos collections de vinyles de qualité supérieure pour enrichir votre expérience musicale." />
         <meta name="keywords" content="nouveautés vinyles, vinyles récents, vinyles de qualité, vinyles à collectionner" />
-        <meta name="author" content="Magasin de Vinyles" />
+        <meta name="author" content="SensVinylo" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",
