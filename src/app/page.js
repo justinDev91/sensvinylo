@@ -1,5 +1,6 @@
 
 
+import HomePageBanner from './components/HomePageBanner.js';
 import NetworkLinks from './components/NetworkLinks.js';
 import ProductList from './components/ProductList.js';
 import Footer from './components/footer.js';
@@ -13,11 +14,12 @@ export default function Home() {
     <> 
       <div>
         <Navbar />
+        <HomePageBanner />
         <div className="mt-8">
           <SearchBar />
         </div>
         <section className="mb-8">
-          <h1 className="text-3xl m-10 font-bold mb-4">Products</h1>
+          <h1 className="text-3xl m-10 font-bold mb-4">Produits</h1>
           <ProductList />
         </section>
         <section className="bg-gray-50 flex justify-center items-center h-full">

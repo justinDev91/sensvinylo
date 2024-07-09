@@ -24,7 +24,7 @@ const blogPosts = [
       <p>Il est essentiel de garder vos disques vinyles propres. Utilisez une brosse antistatique pour enlever la poussière avant chaque lecture. Évitez de toucher la surface du disque avec vos doigts pour prévenir les empreintes digitales et la saleté.</p>
       <p>Stockez vos vinyles à la verticale et à l'abri de la lumière directe du soleil. Les températures extrêmes peuvent déformer vos disques et altérer la qualité sonore. Utilisez des pochettes de protection pour éviter les rayures et la poussière.</p>
     `,
-    tags: ["Disques Vinyles", "Entretien", "Conseils"]
+    tags: ["Disques Vinyles", "Entretien", "Conseils", "Musique"]
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const blogPosts = [
       <p>9. "Ella and Louis" de Ella Fitzgerald et Louis Armstrong - Une collaboration légendaire.</p>
       <p>10. "Bitches Brew" de Miles Davis - Une fusion révolutionnaire du jazz et du rock.</p>
     `,
-    tags: ["Disques Vinyles", "Jazz", "Albums"]
+    tags: ["Disques Vinyles", "Jazz", "Albums", "Musique"]
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const blogPosts = [
       <p>La qualité sonore des disques vinyles offre une expérience d'écoute unique et authentique. Que vous soyez un collectionneur chevronné ou un nouveau venu dans le monde du jazz, ces albums vous offriront des heures de plaisir musical.</p>
       <p>Découvrez pourquoi ces albums ont résisté à l'épreuve du temps et continuent d'inspirer les musiciens et les auditeurs du monde entier.</p>
     `,
-    tags: ["Disques Vinyles", "Jazz", "Collections"]
+    tags: ["Disques Vinyles", "Jazz", "Collections", "Musique"]
   }
 ];
 

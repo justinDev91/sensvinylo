@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-gray-400 mt-4">
-              Bienvenue sur notre magasin de vinyles ! D&eacute;couvrez une large gamme de vinyles, des classiques aux derni&egrave;res sorties.
+              Bienvenue sur SensVinylo,  notre magasin de vinyle ! D&eacute;couvrez une large gamme de vinyles, des classiques aux derni&egrave;res sorties.
             </p>
             <section className="my-4">
               <NewsletterForm />

@@ -9,18 +9,18 @@ export const metadata = {
   siteName: 'sensvinylo',
   generator: 'Next.js',
   applicationName: 'Next.js',
-  title: "sensvinylo - Achetez des vinyles classiques et des nouveautés",
-  description: "Bienvenue sur notre sensvinylo ! Découvrez une large gamme de vinyles, des classiques aux dernières sorties.",
+  title: "SensVinylo - Votre boutique préféré de vinyles en région parisienne",
+  description: "Bienvenue sur SensVinylo,  notre boutique de vinyle ! Découvrez une large gamme de vinyles, des classiques aux dernières sorties.",
   url: "https://www.sensvinylo-musique.fr",
   image: "https://www.sensvinylo-musique.fr/vinyle-img.png",
   twitterUsername: "@sensvinylo",
-  keywords: ['vinyles', 'musique', 'albums', 'classiques', 'nouvelles sorties'],
+  keywords: ['vinyle', 'musique', 'albums', 'classiques', 'nouvelles sorties', "platine vinyle", "lecteur vinyle", "adieu vinyle", "disque", "vente", "achat"],
   authors: [{ name: 'Justin' }, { name: 'Katasi', url: 'https://www.sensvinylo-musique.fr' }],
   openGraph: {
-    title: 'sensvinylo',
-    description: "Bienvenue sur notre sensvinylo ! Découvrez une large gamme de vinyles, des classiques aux dernières sorties.",
+    title: 'SensVinylo',
+    description: "Bienvenue sur SensVinylo,  notre boutique de vinyle ! Découvrez une large gamme de vinyles, des classiques aux dernières sorties.",
     url: "https://www.sensvinylo-musique.fr",
-    siteName: 'Sensvinylo',
+    siteName: 'SensVinylo',
     locale: 'fr_FR',
     type: 'website',
   },
@@ -31,20 +31,18 @@ export const metadata = {
     },
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
   },
-
-
 };
 
 export default function RootLayout({ children }) {
