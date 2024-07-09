@@ -12,8 +12,8 @@ const Blog = () => {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8"/>
         <title>Vinyl Blog - Your Ultimate Source for Vinyl Records</title>
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Discover the latest vinyl records, promotions, and articles on our blog. Subscribe to our newsletter for updates!" />
         <meta name="keywords" content="vinyl records, new vinyl releases, vinyl promotions, vinyl blog, music articles" />

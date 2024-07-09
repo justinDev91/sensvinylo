@@ -13,8 +13,8 @@ const Genre = () => {
   return (
     <>
       <Head>
-        <meta charset="UTF-8"/>
         <title>Vinyls par Genre - SensVinylo</title>
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Découvrez une sélection de disques vinyles classés par genre musical. Explorez nos collections de rock, jazz, et plus encore." />
         <meta name="keywords" content="vinyles par genre, vinyles rock, vinyles jazz, collections vinyles, magasin de vinyles" />

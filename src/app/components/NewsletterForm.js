@@ -16,7 +16,7 @@ const NewsletterForm = () => {
         />
         <button
           type="submit"
-          className="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300"
+          className="w-full py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition duration-300"
         >
           S&apos;abonner
         </button>

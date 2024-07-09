@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
           })}
         </script>
       </Head>
-      <html lang="en">
+      <html lang="fr">
         <body className={inter.className}>
           {children}
         </body>

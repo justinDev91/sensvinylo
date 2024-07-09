@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div className="max-w-5xl mx-auto p-4 bg-white shadow-md rounded-lg">
       <Head>
-        <meta charset="UTF-8"/>
         <title>À Propos de SensVinylo | Votre Référence pour les Disques Vinyles</title>
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Découvrez l'histoire de SensVinylo, votre destination ultime pour l'achat de disques vinyles, l'exploration de collections uniques, et l'apprentissage de l'art du vinyle."/>
         <meta name="robots" content="index, follow" />
@@ -35,7 +35,7 @@ const About = () => {
           <p className="text-lg text-gray-700 mb-4">
             Fond&eacute; en 2021, SensVinylo a parcouru un long chemin depuis ses d&eacute;buts. Lorsque nous avons commenc&eacute;, notre passion pour les disques vinyles nous a pouss&eacute;s &agrave; cr&eacute;er notre propre entreprise.
           </p>
-          <p className="text-lg mb-6">
+          <p className="text-lg text-gray-700 mb-4">
             Chez SensVinylo, nous croyons que chaque disque vinyle a une histoire à raconter. Nous nous spécialisons dans la sélection de vinyles rares, d&apos;albums vinyles classiques et de nouveautés passionnantes pour les collectionneurs et les mélomanes. Notre mission est de vous offrir une expérience d&apos;achat exceptionnelle avec des produits de qualité et un service client attentif.
           </p>
           <p className="text-lg text-gray-700 mb-4">
